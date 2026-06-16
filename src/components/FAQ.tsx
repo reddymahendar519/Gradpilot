@@ -79,10 +79,10 @@ export default function FAQ() {
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Still have questions?</p>
           <a
-            href="mailto:support@gradpilot.ai"
+            href="mailto:support@gradpilot.co.in"
             className="inline-flex items-center text-primary-600 font-semibold hover:underline"
           >
-            Contact us at support@gradpilot.ai
+            Contact us at support@gradpilot.co.in
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

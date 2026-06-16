@@ -15,31 +15,35 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-sm'
-          : 'bg-transparent'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm'
+          : 'bg-white/95 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+            <div className="w-9 h-9 bg-primary-600 rounded-xl flex items-center justify-center shadow-sm">
               <svg
                 className="w-5 h-5 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                <circle cx="12" cy="12" r="9" strokeWidth={2} />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.5 9.5l-1.5 5-3.5 1 1.5-5z" />
               </svg>
             </div>
-            <span className="text-xl font-bold text-gray-900">GradPilot</span>
+            <span className="text-xl font-bold text-gray-900">
+              Grad<span className="text-primary-600">Pilot</span>
+            </span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">
-              How It Works
-            </a>
             <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">
               Features
+            </a>
+            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">
+              How It Works
             </a>
             <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors">
               FAQ
